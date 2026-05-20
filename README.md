@@ -229,7 +229,7 @@ Each tutorial has a dedicated methods file documenting the rationale behind ever
 | File | Tutorial | Key topics covered |
 |---|---|---|
 | [`Methods/01_Visium_hne_Methods.md`](Methods/01_Visium_hne_Methods.md) | Visium H&E Mouse Brain | Visium platform, ImageContainer, multi-scale image features, image-based clustering, hexagonal spatial graph, Ripley's L, Moran's I |
-| [`Methods/02_Xenium_Analysis_Methods`](Methods/02_Xenium_Analysis_Methods.md) | Xenium Human Lung Cancer | SpatialData/Zarr format, Xenium QC, Leiden clustering, Delaunay graph, Moran's I, co-occurrence, neighborhood enrichment, centrality scores |
+| [`Methods/02_Xenium_Analysis_Methods.md`](Methods/02_Xenium_Analysis_Methods.md) | Xenium Human Lung Cancer | SpatialData/Zarr format, Xenium QC, Leiden clustering, Delaunay graph, Moran's I, co-occurrence, neighborhood enrichment, centrality scores |
 | [`Methods/03_Visium_Flourescence_Analysis_Methods.md`](Methods/03_Visium_Flourescence_Analysis_Methods.md) | Visium Fluorescence Mouse Brain | Fluorescence vs H&E imaging, Gaussian smoothing, watershed segmentation, segmentation features (cell count, area, intensity) |
 | [`Methods/04_Scanpy_Spatial_Basic_Analysis_Methods.md`](Methods/04_Scanpy_Spatial_Basic_Analysis_Mathods.md) | Scanpy Spatial (Visium + MERFISH) | Foundational spatial workflow, spatial visualisation, marker gene mapping, MERFISH platform background, cross-tutorial platform comparison |
 
