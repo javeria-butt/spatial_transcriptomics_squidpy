@@ -2,8 +2,8 @@
 # Spatial Transcriptomics Analysis with Squidpy & Scanpy
 
 **Author:** Javeria Butt   
-**Tools:** Squidpy 路 Scanpy 路 SpatialData 路 AnnData  
-**Reference genome / platforms:** 10x Xenium 路 10x Visium 路 MERFISH
+**Tools:** Squidpy | Scanpy | SpatialData | AnnData  
+**Reference genome / platforms:** | 10x Xenium | 10x Visium | MERFISH
 
 ---
 
