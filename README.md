@@ -1,5 +1,5 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1r4MjFgaYZAxcxDeTNY5BO3gUACop6ui8?usp=sharing)
-# 馃敩 Spatial Transcriptomics Analysis with Squidpy & Scanpy
+# Spatial Transcriptomics Analysis with Squidpy & Scanpy
 
 **Author:** Javeria Butt   
 **Tools:** Squidpy 路 Scanpy 路 SpatialData 路 AnnData  
@@ -7,7 +7,7 @@
 
 ---
 
-## 馃搵 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Tutorials Covered](#tutorials-covered)
@@ -105,12 +105,12 @@ Key steps:
 
 | Tutorial | Dataset | Size | Source | Auto-download? |
 |---|---|---|---|---|
-| 02 Xenium | Human Lung Cancer (Xenium) | ~10 GB | [10x Genomics](https://www.10xgenomics.com/datasets/preview-data-ffpe-human-lung-cancer-with-xenium-multimodal-cell-segmentation-1-standard) | 鉂?Manual |
-| 01 Visium H&E | Mouse Brain coronal (H&E) | ~314 MB | Squidpy datasets | 鉁?Auto |
-| 03 Visium Fluo | Mouse Brain coronal crop (fluo) | ~370 MB | Squidpy datasets | 鉁?Auto |
-| 04 Scanpy Spatial | Mouse Brain Visium + MERFISH cortex | ~100 MB | Squidpy datasets | 鉁?Auto |
+| 02 Xenium | Human Lung Cancer (Xenium) | ~10 GB | [10x Genomics](https://www.10xgenomics.com/datasets/preview-data-ffpe-human-lung-cancer-with-xenium-multimodal-cell-segmentation-1-standard) | Manual |
+| 01 Visium H&E | Mouse Brain coronal (H&E) | ~314 MB | Squidpy datasets | Auto |
+| 03 Visium Fluo | Mouse Brain coronal crop (fluo) | ~370 MB | Squidpy datasets | Auto |
+| 04 Scanpy Spatial | Mouse Brain Visium + MERFISH cortex | ~100 MB | Squidpy datasets | Auto |
 
-### Tutorial 02 鈥?Manual Xenium download
+### Tutorial 02 Manual Xenium download
 
 ```bash
 # Download from 10x Genomics (requires registration)
@@ -121,20 +121,20 @@ mkdir -p data/Xenium
 # Place extracted files in Data/Xenium/
 ```
 
-### Tutorials 01, 03, 04 鈥?Auto download
+### Tutorials 01, 03, 04 Auto download
 
 These datasets download automatically when you run the Notebooks:
 
 ```python
-# Tutorial 01 鈥?loads ~314 MB on first run
+# Tutorial 01 loads ~314 MB on first run
 adata = sq.datasets.visium_hne_adata()
 img   = sq.datasets.visium_hne_image()
 
-# Tutorial 03 鈥?loads ~370 MB on first run
+# Tutorial 03 loads ~370 MB on first run
 adata = sq.datasets.visium_fluo_adata_crop()
 img   = sq.datasets.visium_fluo_image_crop()
 
-# Tutorial 04 鈥?loads Visium + MERFISH datasets
+# Tutorial 04 loads Visium + MERFISH datasets
 adata = sq.datasets.visium_hne_adata()
 ```
 
@@ -142,14 +142,14 @@ adata = sq.datasets.visium_hne_adata()
 
 ## Installation
 
-### Option A 鈥?Conda (recommended)
+### Option A Conda (recommended)
 
 ```bash
 conda env create -f Environment/environment.yml
 conda activate spatial-sq
 ```
 
-### Option B 鈥?pip
+### Option B pip
 
 ```bash
 pip install -r Environment/requirements.txt
@@ -181,13 +181,13 @@ conda activate spatial-sq
 jupyter notebook Notebooks/
 ```
 
-Run Notebooks in order (01 鈫?04). Each notebook is self-contained.
+Run Notebooks in order (01 to 04). Each notebook is self-contained.
 
 ---
 
 ## Results Summary
 
-### Tutorial 01 鈥?Visium H&E (Mouse Brain)
+### Tutorial 01 Visium H&E (Mouse Brain)
 
 | Metric | Value |
 |---|---|
@@ -196,7 +196,7 @@ Run Notebooks in order (01 鈫?04). Each notebook is self-contained.
 | Pre-annotated clusters | 14 brain regions |
 | Key finding | Image features alone recapitulate gene expression-based clusters |
 
-### Tutorial 02 鈥?Xenium (Human Lung Cancer)
+### Tutorial 02 Xenium (Human Lung Cancer)
 
 | Metric | Value |
 |---|---|
@@ -205,14 +205,14 @@ Run Notebooks in order (01 鈫?04). Each notebook is self-contained.
 | Clusters (Leiden) | ~10 |
 | Key finding | Distinct spatial organization of tumor vs immune cell populations |
 
-### Tutorial 03 鈥?Visium Fluorescence (Mouse Brain crop)
+### Tutorial 03 Visium Fluorescence (Mouse Brain crop)
 
 | Metric | Value |
 |---|---|
 | Spots | Cropped region |
 | Key finding | Segmentation features capture cell density differences across brain regions |
 
-### Tutorial 04 鈥?Scanpy Spatial (Visium + MERFISH)
+### Tutorial 04 Scanpy Spatial (Visium + MERFISH)
 
 | Metric | Value |
 |---|---|
